@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+       <div class="wrapper">
+
+            <h1>Weather App</h1>
+            <div class="tab-container">
+                  <p class="tab" data-userWeather>Your Weather</p>
+                  <p class="tab" data-searchWeather>Search Weather</p>
+            </div>
+            <div class="weather-container">
+                  <!-- access graant karne wala section -->
+                  <div class="sub-container   grant-location-container">
+                        <img src="./images/location.png" width="80" height="80" loading="lazy">
+                        <p>Grant Location Access</p>
+                        <p>Allow Access to get weather information</p>
+                        <button class="btn" data-grantAccess>Grant Acces</button>
+                  </div>
+                  <!-- search form -->
+                   <form class="form-container" data-searchform>
+                        <input placeholder="Search for city...." data-searchInput>
+                        <button class="btn" type="submit">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                   </form>
+                   <!-- loading screen container -->
+                    <div class="sub-container  loading-container">
+                        <img src="./images/loading.gif" alt="loadingimg" width="150" height="150">
+                        <p>loading...</p>
+                    </div>
+
+                    <!-- show weather information -->
+                     <div class="sub-container  user-info-container">
+                        <div class="name">
+                              <p data-cityname></p>
+                              <img src="" data-countryicon>
+                        </div>
+                        <p data-weatherDesc></p>
+                        <img data-weatherIcon>
+
+                        <p data-temp></p>
+
+                        <!-- 3cards- parameter -->
+                         <div class="parameter-containers">
+                              <div class="parameter">
+                                    <img src="./images/wind.png" alt="">
+                                    <p>windspeed</p>
+                                    <p data-windspeed></p>
+                              </div>
+                              <!-- card 2 -->
+                               <div class="parameter">
+                                    <img src="./images/humidity.png" alt="">
+                                    <p>humidity</p>
+                                    <p data-humidity></p>
+                               </div>
+                               <!-- card3 -->
+                                <div class="parameter">
+                                    <img src="./images/cloud.png" alt="">
+                                    <p>clouds</p>
+                                    <p data-cloudiness></p>
+                                </div>
+                         </div>
+                     </div>
+            </div>
+       </div>
+       <script src="https://kit.fontawesome.com/c284b853ce.js" crossorigin="anonymous"></script>
+       <script src="update.js"></script>
+       
+ </body>
+ </html>
