@@ -1,4 +1,4 @@
-console.log('love you mahi');
+
 const usertab = document.querySelector("[data-userWeather]");
 const searchtab = document.querySelector("[data-searchWeather]");
 const userContainer = document.querySelector(".weather-container");
